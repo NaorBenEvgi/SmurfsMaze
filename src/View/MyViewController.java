@@ -74,9 +74,11 @@ public class MyViewController implements IView, Observer {
         if(o == viewModel){
             if(solutionDisplayed){
                 mazeDisplayer.solutionDisplayed = true;
+                solveMazeButton.setSelected(true);
             }
             else{
                 mazeDisplayer.solutionDisplayed = false;
+                solveMazeButton.setSelected(false);
             }
             displayMaze(viewModel.getBoard());
             generateMazeButton.setDisable(false);
@@ -98,6 +100,7 @@ public class MyViewController implements IView, Observer {
         started = true;
         solutionDisplayed = false;
         solveMazeButton.setSelected(false);
+        hintButton.setDisable(false);
         saveButton.setDisable(false);
         setNumOfHints(0);
         playSong("resources/music/EntranceOriginalSmurfSong.mp3");
@@ -156,6 +159,7 @@ public class MyViewController implements IView, Observer {
         this.numOfHints = numOfHints;
         hintsLabel.setText(numOfHints + "");
         mazeDisplayer.numOfHints = numOfHints;
+        hintButton.setDisable(false);
     }
 
 
@@ -260,7 +264,7 @@ public class MyViewController implements IView, Observer {
     }
 
     public void showHint(){
-        if(numOfHints == viewModel.getSolution().size()){
+        if(numOfHints == viewModel.getSolution().size() && numOfHints != 0){
             displayAlert("Maximum Hints Displayed", "You can't get anymore hints since the whole way to the village is displayed...");
             hintButton.setDisable(true);
             mazeDisplayer.requestFocus();

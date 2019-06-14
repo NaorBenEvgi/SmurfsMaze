@@ -103,6 +103,7 @@ public class MyModel extends Observable implements IModel {
                 @Override
                 public void clientStrategy(InputStream inFromServer, OutputStream outToServer) {
                     try {
+                        solutionPath = new ArrayList<Position>();
                         ObjectOutputStream toServer = new ObjectOutputStream(outToServer);
                         ObjectInputStream fromServer = new ObjectInputStream(inFromServer);
                         toServer.flush();
