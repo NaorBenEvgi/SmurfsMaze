@@ -1,0 +1,70 @@
+.root{
+    -fx-background-image: url("bg50.jpg");
+    -fx-background-size: cover;
+
+}
+
+
+/*
+#borderPane{
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}*/
+
+
+
+Label{
+    -fx-text-fill: Black;
+    -fx-font-family: "Gisha";
+    -fx-font-weight: bold;
+}
+
+Button
+{
+    -fx-text-fill: Black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Gisha";
+    -fx-wrap-text: true;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-background-image: url("hint.jpg");
+    -fx-background-radius: 16.4, 15;
+    -fx-background-insets: -1.4, 0;
+    -fx-border-radius: 2;
+    -fx-border-width: 2;
+    -fx-background-size: 150 150;
+    -fx-background-position: center center;
+}
+
+
+
+Button:hover{
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-text-fill: cornflowerblue;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+
+RadioButton{
+    -fx-text-fill: Black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Gisha";
+    -fx-background-image: url("hint.jpg");
+    -fx-wrap-text: true;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 16.4, 15;
+    -fx-background-insets: -1.4, 0;
+    -fx-border-radius: 2;
+    -fx-border-width: 2;
+    -fx-background-size: 150 150;
+    -fx-background-position: center center;
+}
+RadioButton:hover{
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-text-fill: cornflowerblue;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+
+}
