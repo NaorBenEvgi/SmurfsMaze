@@ -163,13 +163,16 @@ public class MyViewController implements IView, Observer {
         setNumOfHints(0);
         if(!solutionDisplayed){
             displayAlert("Solution Request","calling Papa Smurf to get you out of the maze");
+            solveMazeButton.setSelected(true);
             solutionDisplayed = true;
             hintButton.setDisable(true);
+            mazeDisplayer.solutionPath = viewModel.getSolution();
         }
         else{
             displayAlert("Solution Request","Papa Smurf went back to the village");
             solutionDisplayed = false;
             hintButton.setDisable(false);
+            solveMazeButton.setSelected(false);
         }
         viewModel.solveMaze();
     }
@@ -257,15 +260,16 @@ public class MyViewController implements IView, Observer {
     }
 
     public void showHint(){
+        if(numOfHints == viewModel.getSolution().size()){
+            displayAlert("Maximum Hints Displayed", "You can't get anymore hints since the whole way to the village is displayed...");
+            hintButton.setDisable(true);
+            mazeDisplayer.requestFocus();
+            return;
+        }
         numOfHints++;
         hintsLabel.setText(numOfHints + "");
         mazeDisplayer.numOfHints++;
         viewModel.solveMaze();
-        if(numOfHints == viewModel.getSolution().size()){
-            displayAlert("Maximum Hints Displayed", "You can't get anymore hints since the whole way to the village is displayed...");
-            hintButton.setDisable(true);
-            //mazeDisplayer.requestFocus();
-        }
     }
 
     public void zoom(ScrollEvent scroll){
