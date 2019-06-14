@@ -179,6 +179,7 @@ public class MyViewController implements IView, Observer {
             solveMazeButton.setSelected(false);
         }
         viewModel.solveMaze();
+        mazeDisplayer.requestFocus();
     }
 
 
@@ -261,6 +262,7 @@ public class MyViewController implements IView, Observer {
             player.play();
             songPlayed = true;
         }
+        mazeDisplayer.requestFocus();
     }
 
     public void showHint(){
@@ -270,9 +272,7 @@ public class MyViewController implements IView, Observer {
             mazeDisplayer.requestFocus();
             return;
         }
-        numOfHints++;
-        hintsLabel.setText(numOfHints + "");
-        mazeDisplayer.numOfHints++;
+        setNumOfHints(numOfHints+1);
         viewModel.solveMaze();
     }
 
@@ -319,6 +319,7 @@ public class MyViewController implements IView, Observer {
             playSong("resources/music/EntranceOriginalSmurfSong.mp3");
             solveMazeButton.setSelected(false);
             hintButton.setDisable(false);
+            mazeDisplayer.requestFocus();
         }
     }
 
