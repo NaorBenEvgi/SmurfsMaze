@@ -73,7 +73,7 @@ public class MazeDisplayer extends Canvas {
             graphics.clearRect(0,0,getWidth(),getHeight());
 
             //in case a hint is requested and the whole solution is not displayed yet
-            if(numOfHints > 0 && !solutionDisplayed){
+           /* if(numOfHints > 0 && !solutionDisplayed){
                 for(int i=0; i<Math.min(numOfHints+1,solutionPath.size());i++){
                     graphics.drawImage(hint,width*solutionPath.get(i).getColumnIndex(),height*solutionPath.get(i).getRowIndex(),width,height);
                 }
@@ -82,6 +82,13 @@ public class MazeDisplayer extends Canvas {
                 for(int i=0; i<solutionPath.size();i++){
                     graphics.drawImage(hint,width*solutionPath.get(i).getColumnIndex(),height*solutionPath.get(i).getRowIndex(),width,height);
                 }
+            }*/
+
+            if(solutionPath != null) {
+                if (!solutionDisplayed)
+                    numOfHints = Math.min(numOfHints, solutionPath.size());
+                else
+                    numOfHints = solutionPath.size();
             }
 
             //draws the maze
@@ -92,6 +99,10 @@ public class MazeDisplayer extends Canvas {
                     }
                 }
             }
+            for(int j=0; j<numOfHints; j++){
+                graphics.drawImage(hint,width*solutionPath.get(j).getColumnIndex(),height*solutionPath.get(j).getRowIndex(),width,height);
+            }
+
             //draws the character and the goal
             graphics.drawImage(character,colIndex*width,rowIndex*height,width,height);
             graphics.drawImage(goal,goalColIndex*width,goalRowIndex*height,width,height);
