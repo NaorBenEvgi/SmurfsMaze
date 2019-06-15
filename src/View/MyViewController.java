@@ -18,9 +18,8 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
+
+import java.io.*;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -45,6 +44,7 @@ public class MyViewController implements IView, Observer {
     public MenuItem saveButton;
     public MenuItem loadButton;
     public MenuItem propertiesButton;
+    public MenuItem highScores;
     public MenuItem programmersInfo;
     public MenuItem algorithmsInfo;
     public RadioButton volumeButton;
@@ -127,6 +127,7 @@ public class MyViewController implements IView, Observer {
             if (viewModel.getCharacterRowIndex() == viewModel.getGoalRow() && viewModel.getCharacterColumnIndex() == viewModel.getGoalColumn()) {
                 finishedTime = System.currentTimeMillis();
                 timeLabel.setText((finishedTime-startedTime)/1000 + "");
+                updateHighscore((int)((finishedTime-startedTime)/1000));
                 if(player != null)
                     player.pause();
                 playSong("resources/Music/WinningSong.mp3");
@@ -382,7 +383,83 @@ public class MyViewController implements IView, Observer {
         });
     }
 
+    public void showHighscore(){
+        try{
+            BufferedReader br = new BufferedReader(new FileReader("highscore"));
+            String line;
+            int grade, time, rows, cols;
+            if((line = br.readLine()) == null){
+                grade = 0;
+                time = 0;
+                rows = 0;
+                cols = 0;
+            }
+            else{
+                String[] scores = new String[3];
+                scores[0] = line.split(" ")[1];
+                scores[1] = br.readLine().split(" ")[1];
+                scores[2] = br.readLine().split(" ")[1];
+                grade = Integer.valueOf(scores[0]);
+                time = Integer.valueOf(scores[1]);
+                rows = Integer.valueOf(scores[2].split("x")[0]);
+                cols = Integer.valueOf(scores[2].split("x")[1]);
+            }
+            displayAlert("Highscore","Highscore:\n" +
+                    "Grade: " + grade + "\n" +
+                    "This grade was given after getting back to the village in " + time + " seconds\n" +
+                    "in a " + rows + "x" + cols + " maze.");
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 
+
+    private void updateHighscore(int time){
+        try {
+            BufferedReader br = new BufferedReader(new FileReader("highscore"));
+            BufferedWriter bw;
+            String line;
+            Maze temp = viewModel.getBoard();
+            if((line = br.readLine()) == null){
+                bw = new BufferedWriter(new FileWriter("highscore"));
+                bw.flush();
+                bw.write("Grade: 0\n");
+                bw.flush();
+                bw.write("Time: 0 seconds\n");
+                bw.flush();
+                bw.write("Dimensions: 0x0");
+                bw.flush();
+                bw.close();
+            }
+            else{
+                int highestGrade = Integer.valueOf(line.split(" ")[1]);
+                int checkedGrade = calculateGrade(time);
+                if(checkedGrade > highestGrade){
+                    bw = new BufferedWriter(new FileWriter("highscore"));
+                    bw.flush();
+                    bw.write("Grade: " + checkedGrade + "\n");
+                    bw.flush();
+                    bw.write("Time: " + time + " seconds\n");
+                    bw.flush();
+                    bw.write("Dimensions: " + temp.getRows() + "x" + temp.getCols());
+                    bw.flush();
+                    bw.close();
+                }
+            }
+            br.close();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    private int calculateGrade(int time){
+        Maze temp = viewModel.getBoard();
+        int rows = temp.getRows(), cols = temp.getCols();
+
+        return (rows*cols)*10/time;
+    }
 
 
     /*public void setRows(KeyEvent event){

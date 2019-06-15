@@ -33,6 +33,7 @@
                         <Menu mnemonicParsing="false" text="Options">
                             <items>
                                 <MenuItem fx:id="propertiesButton" mnemonicParsing="false" text="Properties" onAction="#displayProperties"/>
+                                <MenuItem fx:id="highScores" mnemonicParsing="false" text="Highscore" onAction="#showHighscore"/>
                             </items>
                         </Menu>
                         <Menu mnemonicParsing="false" text="Exit">

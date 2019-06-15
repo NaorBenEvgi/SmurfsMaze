@@ -72,18 +72,7 @@ public class MazeDisplayer extends Canvas {
             GraphicsContext graphics = getGraphicsContext2D();
             graphics.clearRect(0,0,getWidth(),getHeight());
 
-            //in case a hint is requested and the whole solution is not displayed yet
-           /* if(numOfHints > 0 && !solutionDisplayed){
-                for(int i=0; i<Math.min(numOfHints+1,solutionPath.size());i++){
-                    graphics.drawImage(hint,width*solutionPath.get(i).getColumnIndex(),height*solutionPath.get(i).getRowIndex(),width,height);
-                }
-            }
-            else if(solutionDisplayed){
-                for(int i=0; i<solutionPath.size();i++){
-                    graphics.drawImage(hint,width*solutionPath.get(i).getColumnIndex(),height*solutionPath.get(i).getRowIndex(),width,height);
-                }
-            }*/
-
+            //assigning the amount of hints
             if(solutionPath != null) {
                 if (!solutionDisplayed)
                     numOfHints = Math.min(numOfHints, solutionPath.size());
