@@ -26,6 +26,7 @@ Button
     -fx-text-fill: Black;
     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
     -fx-font-family: "Forte";
+    -fx-text-alignment: center;
     -fx-wrap-text: true;
     -fx-font-size: 22px;
     -fx-font-weight: bold;
