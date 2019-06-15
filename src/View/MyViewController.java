@@ -304,7 +304,8 @@ public class MyViewController implements IView, Observer {
         songPlayed = true;
         solutionDisplayed = false;
         volumeButton.setSelected(false);
-        player.play();
+        if(player != null)
+            player.play();
 
         FileChooser chooser = new FileChooser();
         chooser.setTitle("Load maze");
