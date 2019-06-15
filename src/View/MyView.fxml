@@ -98,7 +98,7 @@
                         <Label fx:id="hintsLabel" GridPane.columnIndex="1" GridPane.rowIndex="8" />
                     </children>
                 </GridPane>
-                <Button fx:id="hintButton" disable="true" layoutX="60.0" layoutY="20.0" minHeight="100" minWidth="150" mnemonicParsing="false" onAction="#showHint" text="Get Hint">
+                <Button fx:id="hintButton" disable="true" layoutX="60.0" layoutY="20.0" minHeight="100" minWidth="150" mnemonicParsing="false" onAction="#showHint" text="Show Next Step">
                     <VBox.margin>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                     </VBox.margin>
