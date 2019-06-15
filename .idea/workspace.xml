@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="added focus on maze displayer after some events in the game">
+      <change afterPath="$PROJECT_DIR$/src/View/Smurfs_grass_view.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/hint.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/smurfBackground2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/MazeDisplayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MazeDisplayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/Images/Papa_Smurf_Coin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyViewController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyViewController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyViewController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyViewController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/StyleSheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/StyleSheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/hint.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/smurfBackground2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Images/Papa_Smurf_Coin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/Images/Papa_Smurf_Coin.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/MyView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MyView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/MyViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MyViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/StyleSheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/StyleSheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/alert.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/alert.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/hint.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/smurfBackground2.jpeg" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,38 +80,54 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/MyViewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+            <state relative-caret-position="166">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5171#5172#0" expanded="true" />
-                <element signature="e#5212#5213#0" expanded="true" />
-                <element signature="e#5264#5265#0" expanded="true" />
-                <element signature="e#5299#5300#0" expanded="true" />
-                <element signature="e#5341#5342#0" expanded="true" />
-                <element signature="e#5385#5386#0" expanded="true" />
-                <element signature="e#5440#5441#0" expanded="true" />
-                <element signature="e#5478#5479#0" expanded="true" />
+                <element signature="e#5357#5358#0" expanded="true" />
+                <element signature="e#5398#5399#0" expanded="true" />
+                <element signature="e#5450#5451#0" expanded="true" />
+                <element signature="e#5485#5486#0" expanded="true" />
+                <element signature="e#5527#5528#0" expanded="true" />
+                <element signature="e#5571#5572#0" expanded="true" />
+                <element signature="e#5626#5627#0" expanded="true" />
+                <element signature="e#5664#5665#0" expanded="true" />
+                <element signature="e#7396#7397#0" expanded="true" />
+                <element signature="e#7440#7441#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/View/MyView.fxml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/StyleSheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="35" column="129" selection-start-line="35" selection-start-column="129" selection-end-line="35" selection-end-column="129" />
+            <state relative-caret-position="120">
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/MyView.fxml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="89" column="91" selection-start-line="89" selection-start-column="91" selection-end-line="89" selection-end-column="91" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/Images/smurfsWall.jpeg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/MazeDisplayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="822">
-              <caret line="74" column="43" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
+            <state relative-caret-position="17">
+              <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3866#3867#0" expanded="true" />
@@ -105,8 +136,6 @@
                 <element signature="e#3960#3961#0" expanded="true" />
                 <element signature="e#3996#3997#0" expanded="true" />
                 <element signature="e#4034#4035#0" expanded="true" />
-                <element signature="e#4074#4075#0" expanded="true" />
-                <element signature="e#4117#4118#0" expanded="true" />
                 <element signature="e#4361#4362#0" expanded="true" />
                 <element signature="e#4399#4400#0" expanded="true" />
                 <element signature="e#4448#4449#0" expanded="true" />
@@ -125,16 +154,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/alert.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ViewModel/MyViewModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+            <state relative-caret-position="426">
+              <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1481#1482#0" expanded="true" />
                 <element signature="e#1526#1527#0" expanded="true" />
-                <element signature="e#1557#1558#0" expanded="true" />
-                <element signature="e#1590#1591#0" expanded="true" />
                 <element signature="e#2039#2040#0" expanded="true" />
                 <element signature="e#2085#2086#0" expanded="true" />
               </folding>
@@ -145,8 +181,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/MyModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="114" column="71" selection-start-line="114" selection-start-column="71" selection-end-line="114" selection-end-column="71" />
+            <state relative-caret-position="132">
+              <caret line="109" column="49" selection-start-line="109" selection-start-column="49" selection-end-line="109" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5258#5259#0" expanded="true" />
@@ -177,6 +213,10 @@
       <find>StyleSheet</find>
       <find>getHint</find>
       <find>numOfHints</find>
+      <find>solve</find>
+      <find>Row</find>
+      <find>Label</find>
+      <find>coin</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -191,24 +231,30 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
-        <option value="$PROJECT_DIR$/src/View/StyleSheet.css" />
         <option value="$PROJECT_DIR$/src/View/IView.java" />
         <option value="$PROJECT_DIR$/src/Model/IModel.java" />
         <option value="$PROJECT_DIR$/src/View/Main.java" />
         <option value="$PROJECT_DIR$/src/ViewModel/MyViewModel.java" />
-        <option value="$PROJECT_DIR$/src/View/alert.css" />
         <option value="$PROJECT_DIR$/src/Model/MyModel.java" />
         <option value="$PROJECT_DIR$/src/View/MazeDisplayer.java" />
         <option value="$PROJECT_DIR$/src/View/MyViewController.java" />
+        <option value="$PROJECT_DIR$/src/View/alert.css" />
+        <option value="$PROJECT_DIR$/src/View/StyleSheet.css" />
         <option value="$PROJECT_DIR$/src/View/MyView.fxml" />
       </list>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="1750" />
-    <option name="height" value="980" />
+    <option name="x" value="-7" />
+    <option name="width" value="1167" />
+    <option name="height" value="654" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -219,32 +265,49 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="SmurfsMaze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmurfsMaze" type="462c0819:PsiDirectoryNode" />
+              <item name="ATP - Project - PartC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ATP - Project - PartC" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SmurfsMaze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmurfsMaze" type="462c0819:PsiDirectoryNode" />
+              <item name="ATP - Project - PartC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ATP - Project - PartC" type="462c0819:PsiDirectoryNode" />
               <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SmurfsMaze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmurfsMaze" type="462c0819:PsiDirectoryNode" />
+              <item name="ATP - Project - PartC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ATP - Project - PartC" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ATP - Project - PartC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ATP - Project - PartC" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SmurfsMaze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmurfsMaze" type="462c0819:PsiDirectoryNode" />
+              <item name="ATP - Project - PartC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ATP - Project - PartC" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ATP - Project - PartC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ATP - Project - PartC" type="462c0819:PsiDirectoryNode" />
+              <item name="savedMazes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ATP - Project - PartC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ATP - Project - PartC" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SmurfsMaze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmurfsMaze" type="462c0819:PsiDirectoryNode" />
+              <item name="ATP - Project - PartC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ATP - Project - PartC" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="View" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -252,7 +315,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -265,7 +328,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560506562622" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560633900324" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/ATP - Project - PartC" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -274,16 +337,18 @@
     <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Naor\Desktop\לימודים\שנה ב\נושאים מתקדמים בתכנות\GIT\ATP - Project - PartC\src\View" />
+      <recent name="C:\Users\Naor\Desktop\לימודים\שנה ב\נושאים מתקדמים בתכנות\GIT\ATP - Project - PartC\resources\Images" />
+      <recent name="C:\Users\royj1\IdeaProjects\ATP - Project - PartC\resources" />
+      <recent name="C:\Users\royj1\IdeaProjects\ATP - Project - PartC\src\View" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Naor\Desktop\לימודים\שנה ב\נושאים מתקדמים בתכנות\GIT\ATP - Project - PartC\src\View" />
+      <recent name="C:\Users\Naor\Desktop\לימודים\שנה ב\נושאים מתקדמים בתכנות\GIT\ATP - Project - PartC\resources\Images" />
       <recent name="C:\Users\royj1\IdeaProjects\ATP - Project - PartC\resources\Images" />
       <recent name="C:\Users\royj1\IdeaProjects\ATP - Project - PartC\src\View" />
       <recent name="C:\Users\royj1\IdeaProjects\ATP - Project - PartC\resources\Music" />
-      <recent name="C:\Users\royj1\IdeaProjects\ATP - Project - PartC\resources\Movie" />
-      <recent name="C:\Users\royj1\IdeaProjects\ATP - Project - PartC\.idea\artifacts" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\royj1\IdeaProjects\ATP - Project - PartC\resources" />
-      <recent name="C:\Users\royj1\IdeaProjects\ATP - Project - PartC\src\View" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -416,13 +481,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1993000" />
+    <option name="totallyTimeSpent" value="8677000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.14697987" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.15831557" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" weight="0.3295302" />
       <window_info id="Designer" order="3" />
@@ -433,19 +497,19 @@
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.14872521" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.2751896" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.42492917" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Application Servers" order="9" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.16855524" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.16793066" />
       <window_info anchor="bottom" id="Problems" order="11" />
       <window_info anchor="bottom" id="Changes" order="12" />
       <window_info anchor="bottom" id="Profiler" order="13" />
       <window_info anchor="bottom" id="Event Log" order="14" />
       <window_info anchor="bottom" id="Messages" order="15" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="16" weight="0.3285968" />
+      <window_info anchor="bottom" id="Terminal" order="16" weight="0.32719547" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -514,37 +578,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/.idea/artifacts/ATPProjectJAR.jar!/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/.idea/artifacts/ATPProjectJAR.jar!/src/Server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/javafx-src.zip!/javafx/scene/control/MenuItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="462" selection-start-line="462" selection-end-line="462" />
-          <folding>
-            <element signature="e#15741#15742#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/javafx-src.zip!/javafx/event/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="198" selection-start-line="198" selection-end-line="198" />
-          <folding>
-            <element signature="e#4519#4520#0" expanded="true" />
-            <element signature="e#4550#4551#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/javafx-src.zip!/javafx/scene/Scene.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -882,49 +915,29 @@
     <entry file="file://$PROJECT_DIR$/src/View/bg20.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/smurfBackground2.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/alert.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/Images/smurfsGroup.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="910">
-          <caret line="75" column="28" lean-forward="true" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+        <state relative-caret-position="17">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ViewModel/MyViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1481#1482#0" expanded="true" />
-            <element signature="e#1526#1527#0" expanded="true" />
-            <element signature="e#1557#1558#0" expanded="true" />
-            <element signature="e#1590#1591#0" expanded="true" />
-            <element signature="e#2039#2040#0" expanded="true" />
-            <element signature="e#2085#2086#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/View/hint.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/hint.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/MyModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="114" column="71" selection-start-line="114" selection-start-column="71" selection-end-line="114" selection-end-column="71" />
+        <state relative-caret-position="132">
+          <caret line="109" column="49" selection-start-line="109" selection-start-column="49" selection-end-line="109" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5258#5259#0" expanded="true" />
@@ -935,10 +948,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ViewModel/MyViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1481#1482#0" expanded="true" />
+            <element signature="e#1526#1527#0" expanded="true" />
+            <element signature="e#2039#2040#0" expanded="true" />
+            <element signature="e#2085#2086#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/smurfBackground2.JPEG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/MazeDisplayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="822">
-          <caret line="74" column="43" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
+        <state relative-caret-position="17">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3866#3867#0" expanded="true" />
@@ -947,8 +977,6 @@
             <element signature="e#3960#3961#0" expanded="true" />
             <element signature="e#3996#3997#0" expanded="true" />
             <element signature="e#4034#4035#0" expanded="true" />
-            <element signature="e#4074#4075#0" expanded="true" />
-            <element signature="e#4117#4118#0" expanded="true" />
             <element signature="e#4361#4362#0" expanded="true" />
             <element signature="e#4399#4400#0" expanded="true" />
             <element signature="e#4448#4449#0" expanded="true" />
@@ -965,31 +993,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/alert.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/StyleSheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/MyViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+        <state relative-caret-position="166">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5171#5172#0" expanded="true" />
-            <element signature="e#5212#5213#0" expanded="true" />
-            <element signature="e#5264#5265#0" expanded="true" />
-            <element signature="e#5299#5300#0" expanded="true" />
-            <element signature="e#5341#5342#0" expanded="true" />
-            <element signature="e#5385#5386#0" expanded="true" />
-            <element signature="e#5440#5441#0" expanded="true" />
-            <element signature="e#5478#5479#0" expanded="true" />
+            <element signature="e#5357#5358#0" expanded="true" />
+            <element signature="e#5398#5399#0" expanded="true" />
+            <element signature="e#5450#5451#0" expanded="true" />
+            <element signature="e#5485#5486#0" expanded="true" />
+            <element signature="e#5527#5528#0" expanded="true" />
+            <element signature="e#5571#5572#0" expanded="true" />
+            <element signature="e#5626#5627#0" expanded="true" />
+            <element signature="e#5664#5665#0" expanded="true" />
+            <element signature="e#7396#7397#0" expanded="true" />
+            <element signature="e#7440#7441#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/MyView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="35" column="129" selection-start-line="35" selection-start-column="129" selection-end-line="35" selection-end-column="129" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="89" column="91" selection-start-line="89" selection-start-column="91" selection-end-line="89" selection-end-column="91" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/Images/smurfsWall.jpeg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
   <component name="masterDetails">

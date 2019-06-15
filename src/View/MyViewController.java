@@ -57,8 +57,6 @@ public class MyViewController implements IView, Observer {
     private boolean started = false;
     private long startedTime, finishedTime;
 
-
-
     public void bindProperties(MyViewModel viewModel){
         rowsLabel.textProperty().bind(viewModel.characterRow);
         colsLabel.textProperty().bind(viewModel.characterColumn);
@@ -102,6 +100,7 @@ public class MyViewController implements IView, Observer {
         solveMazeButton.setSelected(false);
         hintButton.setDisable(false);
         saveButton.setDisable(false);
+        generateMazeButton.setDisable(true);
         setNumOfHints(0);
         playSong("resources/music/EntranceOriginalSmurfSong.mp3");
         if(rows < 10 || cols < 10){

@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MyViewController" onKeyPressed="#keyPress" onScroll="#zoom">
+<BorderPane fx:id="borderPane" onKeyPressed="#keyPress" onScroll="#zoom" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MyViewController">
     <top>
         <VBox BorderPane.alignment="CENTER">
             <children>
@@ -26,29 +26,30 @@
                         <Menu mnemonicParsing="false" text="File">
                             <items>
                                 <MenuItem fx:id="generateMazeButton" mnemonicParsing="false" onAction="#generateMaze" text="New" />
-                                <MenuItem fx:id="saveButton" mnemonicParsing="false" text="Save"  onAction="#saveMaze"/>
-                                <MenuItem fx:id="loadButton" mnemonicParsing="false" text="Load" onAction="#loadMaze"/>
+                                <MenuItem fx:id="saveButton" mnemonicParsing="false" onAction="#saveMaze" text="Save" />
+                                <MenuItem fx:id="loadButton" mnemonicParsing="false" onAction="#loadMaze" text="Load" />
                             </items>
                         </Menu>
                         <Menu mnemonicParsing="false" text="Options">
                             <items>
-                                <MenuItem fx:id="propertiesButton" mnemonicParsing="false" text="Properties" onAction="#displayProperties"/>
+                                <MenuItem fx:id="propertiesButton" mnemonicParsing="false" onAction="#displayProperties" text="Properties" />
+                                <MenuItem fx:id="highScores" mnemonicParsing="false" onAction="#showHighscore" text="Highscore" />
                             </items>
                         </Menu>
                         <Menu mnemonicParsing="false" text="Exit">
                             <items>
-                                <MenuItem fx:id="exitButton" mnemonicParsing="false" text="Exit Game" onAction="#exitGame"/>
+                                <MenuItem fx:id="exitButton" mnemonicParsing="false" onAction="#exitGame" text="Exit Game" />
                             </items>
                         </Menu>
                         <Menu mnemonicParsing="false" text="Help">
                             <items>
-                                <MenuItem fx:id="helpButton" mnemonicParsing="false" text="Show Help" onAction="#help"/>
+                                <MenuItem fx:id="helpButton" mnemonicParsing="false" onAction="#help" text="Show Help" />
                             </items>
                         </Menu>
                         <Menu mnemonicParsing="false" text="About">
                             <items>
-                                <MenuItem fx:id="programmersInfo" mnemonicParsing="false" text="About The Programmers" onAction="#programmersInfo"/>
-                                <MenuItem fx:id="algorithmsInfo" mnemonicParsing="false" text="About The Algorithms" onAction="#algorithmsInfo"/>
+                                <MenuItem fx:id="programmersInfo" mnemonicParsing="false" onAction="#programmersInfo" text="About The Programmers" />
+                                <MenuItem fx:id="algorithmsInfo" mnemonicParsing="false" onAction="#algorithmsInfo" text="About The Algorithms" />
                             </items>
                         </Menu>
                     </menus>
@@ -59,20 +60,21 @@
     <left>
         <VBox prefHeight="692.0" prefWidth="200.0" spacing="5.0" BorderPane.alignment="CENTER">
             <children>
-                <GridPane prefHeight="257.0" prefWidth="229.0">
+                <GridPane prefHeight="274.0" prefWidth="210.0">
                     <columnConstraints>
                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="164.0" minWidth="10.0" prefWidth="200.0" />
                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="77.33334350585938" minWidth="0.0" prefWidth="120.0" />
                     </columnConstraints>
                     <rowConstraints>
                         <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="38.333343505859375" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="37.66667175292969" minHeight="10.0" prefHeight="24.333328247070312" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="61.666656494140625" minHeight="10.0" prefHeight="36.666656494140625" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="41.666656494140625" minHeight="10.0" prefHeight="33.333343505859375" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="40.666656494140625" minHeight="10.0" prefHeight="25.66668701171875" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="43.333343505859375" minHeight="10.0" prefHeight="35.33331298828125" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="38.333343505859375" minHeight="10.0" prefHeight="38.333343505859375" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="38.333343505859375" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="61.666656494140625" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40.666656494140625" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="43.333343505859375" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="38.333343505859375" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <VBox.margin>
                         <Insets left="20.0" top="20.0" />
@@ -83,33 +85,34 @@
                     <children>
                         <Label text="Maze height" />
                         <Label text="Maze width" GridPane.rowIndex="1" />
-                        <TextField prefHeight="31.0" prefWidth="71.0" text="20" GridPane.columnIndex="1" fx:id="rowsTextField"/>
-                        <TextField prefHeight="24.0" prefWidth="31.0" text="20" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="colsTextField"/>
-                        <Label fx:id="position_row" text="Position: row" GridPane.rowIndex="3" />
-                        <Label fx:id="position_column" prefHeight="19.0" prefWidth="176.0" text="Position: column" GridPane.rowIndex="4" />
-                        <Label fx:id="rowsLabel" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <Label fx:id="colsLabel" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <Label text="Time:" GridPane.rowIndex="6" />
-                        <Label fx:id="timeLabel" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                        <Label text="Hints:" GridPane.rowIndex="7" />
-                        <Label fx:id="hintsLabel" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <TextField fx:id="rowsTextField" prefHeight="31.0" prefWidth="71.0" text="20" GridPane.columnIndex="1" />
+                        <TextField fx:id="colsTextField" prefHeight="24.0" prefWidth="34.0" text="20" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="position_title" text="Position:" GridPane.rowIndex="3" />
+                        <Label fx:id="position_row" text="Row" GridPane.rowIndex="4" />
+                        <Label fx:id="position_column" prefHeight="19.0" prefWidth="176.0" text="Column" GridPane.rowIndex="5" />
+                        <Label fx:id="rowsLabel" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="colsLabel" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label text="Time:" GridPane.rowIndex="7" />
+                        <Label fx:id="timeLabel" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label text="Hints:" GridPane.rowIndex="8" />
+                        <Label fx:id="hintsLabel" GridPane.columnIndex="1" GridPane.rowIndex="8" />
                     </children>
                 </GridPane>
-                <Button fx:id="hintButton" layoutX="60.0" layoutY="20.0" minHeight="100" minWidth="150" mnemonicParsing="false" text="Get Hint" onAction="#showHint">
+                <Button fx:id="hintButton" disable="true" layoutX="60.0" layoutY="20.0" minHeight="100" minWidth="150" mnemonicParsing="false" onAction="#showHint" text="Get Hint">
                     <VBox.margin>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                     </VBox.margin>
                     <padding>
                         <Insets left="20.0" />
                     </padding></Button>
-                <RadioButton fx:id="solveMazeButton" layoutX="40.0" layoutY="60.0" minHeight="100" minWidth="150" mnemonicParsing="false" text="Show Solution" onAction="#solveMaze">
+                <RadioButton fx:id="solveMazeButton" disable="true" layoutX="40.0" layoutY="60.0" minHeight="100" minWidth="150" mnemonicParsing="false" onAction="#solveMaze" text="Show Solution">
                     <VBox.margin>
                         <Insets bottom="40.0" left="40.0" right="40.0" />
                     </VBox.margin>
                     <padding>
                         <Insets left="25.0" />
                     </padding></RadioButton>
-                <RadioButton fx:id="volumeButton" layoutX="40.0" layoutY="60.0" minHeight="100" minWidth="150" mnemonicParsing="false" text="Mute" onAction="#pauseMusic">
+                <RadioButton fx:id="volumeButton" disable="true" layoutX="40.0" layoutY="60.0" minHeight="100" minWidth="150" mnemonicParsing="false" onAction="#pauseMusic" text="Mute">
                     <VBox.margin>
                         <Insets left="40.0" />
                     </VBox.margin>
@@ -128,7 +131,7 @@
     <center>
         <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="CENTER">
             <children>
-                <MazeDisplayer fx:id="mazeDisplayer" height="1000.0" width="1000.0" characterImage="resources/Images/smurf_character.jpg" goalImage="resources/Images/smurfsGoal.jpeg" hintImage="resources/Images/smurfsHint.jpeg" wallImage="resources/Images/smurfsWall.jpeg" onMousePressed="#mouseClick"/>
+                <MazeDisplayer fx:id="mazeDisplayer" characterImage="resources/Images/smurf_character.jpg" goalImage="resources/Images/smurfsGoal.jpeg" height="1000.0" hintImage="resources/Images/smurfsHint.jpeg" onMousePressed="#mouseClick" wallImage="resources/Images/smurfsWall.jpeg" width="1000.0" />
             </children>
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

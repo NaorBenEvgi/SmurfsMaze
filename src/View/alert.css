@@ -1,7 +1,8 @@
 .root{
-    -fx-background-image: url("SmurfBackground2.jpeg");
+    -fx-background-image: url("SmurfBackground2.jpg");
     -fx-background-size: cover;
     -fx-font-weight: bold;
+    -fx-font-family: "Gill Sans MT";
     -fx-font-size:120%
 }
 .alert *.label.content {
@@ -10,7 +11,7 @@
 
 Button {
     -fx-text-fill: cornflowerblue;
-    -fx-font-family: "Gisha";
+    -fx-font-family: "Forte";
     -fx-font-weight: bold;
     -fx-background-color: white;
     -fx-effect: dropshadow( three-pass-box, yellow, 10.0, 0.0, 0.0, 0.0);
