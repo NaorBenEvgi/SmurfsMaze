@@ -131,7 +131,7 @@
     <center>
         <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="CENTER">
             <children>
-                <MazeDisplayer fx:id="mazeDisplayer" characterImage="resources/Images/smurf_character.jpg" goalImage="resources/Images/smurfsGoal.jpeg" height="1000.0" hintImage="resources/Images/smurfsHint.jpeg" onMousePressed="#mouseClick" wallImage="resources/Images/smurfsWall.jpeg" width="1000.0" />
+                <MazeDisplayer fx:id="mazeDisplayer" characterImage="resources/Images/smurf_character.jpg" goalImage="resources/Images/Smurf_House.png" height="1000.0" hintImage="resources/Images/Papa_smurf_coin.png" onMousePressed="#mouseClick" wallImage="resources/Images/smurfsWall.jpeg" width="1000.0" />
             </children>
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

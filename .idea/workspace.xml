@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="added focus on maze displayer after some events in the game">
-      <change afterPath="$PROJECT_DIR$/src/View/Smurfs_grass_view.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/hint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/smurfBackground2.jpg" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="changing the fonts, the labels and the graphics">
+      <change afterPath="$PROJECT_DIR$/resources/Images/Papa_smurf_coin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/Images/Smurf_House.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/Images/Papa_Smurf_Coin.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyViewController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyViewController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyViewController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyViewController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/StyleSheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/StyleSheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/hint.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/smurfBackground2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Images/Papa_Smurf_Coin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/Images/Papa_Smurf_Coin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/alert.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/alert.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/MyView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MyView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/MyViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MyViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/StyleSheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/StyleSheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/alert.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/alert.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/hint.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/smurfBackground2.jpeg" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,17 +95,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/View/MyView.fxml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="89" column="91" selection-start-line="89" selection-start-column="91" selection-end-line="89" selection-end-column="91" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="133" column="150" selection-start-line="133" selection-start-column="150" selection-end-line="133" selection-end-column="150" />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/Images/smurfsHint.jpeg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/Images/smurfsWall.jpeg">
           <provider selected="true" editor-type-id="images" />
         </entry>
@@ -328,7 +320,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560633900324" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560634829328" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/ATP - Project - PartC" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -344,8 +336,8 @@
       <recent name="C:\Users\royj1\IdeaProjects\ATP - Project - PartC\src\View" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Naor\Desktop\לימודים\שנה ב\נושאים מתקדמים בתכנות\GIT\ATP - Project - PartC\src\View" />
       <recent name="C:\Users\Naor\Desktop\לימודים\שנה ב\נושאים מתקדמים בתכנות\GIT\ATP - Project - PartC\resources\Images" />
+      <recent name="C:\Users\Naor\Desktop\לימודים\שנה ב\נושאים מתקדמים בתכנות\GIT\ATP - Project - PartC\src\View" />
       <recent name="C:\Users\royj1\IdeaProjects\ATP - Project - PartC\resources\Images" />
       <recent name="C:\Users\royj1\IdeaProjects\ATP - Project - PartC\src\View" />
       <recent name="C:\Users\royj1\IdeaProjects\ATP - Project - PartC\resources\Music" />
@@ -477,14 +469,22 @@
       <option name="project" value="LOCAL" />
       <updated>1560528967574</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changing the fonts, the labels and the graphics">
+      <created>1560634297682</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560634297685</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8677000" />
+    <option name="totallyTimeSpent" value="9302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.15831557" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -497,13 +497,13 @@
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.2751896" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.2751896" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.42492917" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Application Servers" order="9" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.16793066" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.16793066" />
       <window_info anchor="bottom" id="Problems" order="11" />
       <window_info anchor="bottom" id="Changes" order="12" />
       <window_info anchor="bottom" id="Profiler" order="13" />
@@ -571,24 +571,14 @@
     <MESSAGE value="fixed a small problem in the hint and solution drawing - updated changes in the controller" />
     <MESSAGE value="fixed small problems of the solution and hints, and fixed a major problem in the solution display" />
     <MESSAGE value="added focus on maze displayer after some events in the game" />
-    <option name="LAST_COMMIT_MESSAGE" value="added focus on maze displayer after some events in the game" />
+    <MESSAGE value="changing the fonts, the labels and the graphics" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing the fonts, the labels and the graphics" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/javafx-src.zip!/javafx/scene/Scene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="2494" selection-start-line="2494" selection-end-line="2494" />
-          <folding>
-            <element signature="e#66617#66618#0" expanded="true" />
-            <element signature="e#66663#66664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/javafx-src.zip!/javafx/beans/property/DoublePropertyBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1027,16 +1017,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/MyView.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="89" column="91" selection-start-line="89" selection-start-column="91" selection-end-line="89" selection-end-column="91" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/Images/smurfsWall.jpeg">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/Images/smurfsHint.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/MyView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="133" column="150" selection-start-line="133" selection-start-column="150" selection-end-line="133" selection-end-column="150" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
   </component>
   <component name="masterDetails">
