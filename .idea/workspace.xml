@@ -6,15 +6,17 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="created a jar">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/ATPProjectJAR.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ATP___Project___PartB.xml" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="fixed bugs, updated the jar etc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ATP - Project - PartC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ATP - Project - PartC.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/highscore" beforeDir="false" afterPath="$PROJECT_DIR$/highscore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/MyModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/MyModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/Model/MyModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP - Project - PartC/Model/MyModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyViewController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyViewController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyViewController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyViewController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/MyViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/alert.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP - Project - PartC/View/alert.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/MyView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MyView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/MyViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MyViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/alert.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/alert.css" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,11 +73,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/MyViewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+            <state relative-caret-position="1513">
+              <caret line="395" column="32" selection-start-line="395" selection-start-column="32" selection-end-line="395" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5960#5961#0" expanded="true" />
@@ -86,8 +88,8 @@
                 <element signature="e#6174#6175#0" expanded="true" />
                 <element signature="e#6229#6230#0" expanded="true" />
                 <element signature="e#6267#6268#0" expanded="true" />
-                <element signature="e#7961#7962#0" expanded="true" />
-                <element signature="e#8005#8006#0" expanded="true" />
+                <element signature="e#8848#8849#0" expanded="true" />
+                <element signature="e#8892#8893#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,8 +99,8 @@
         <entry file="file://$PROJECT_DIR$/src/View/MyView.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="133" column="57" selection-start-line="133" selection-start-column="57" selection-end-line="133" selection-end-column="57" />
+            <state relative-caret-position="2006">
+              <caret line="148" selection-start-line="148" selection-end-line="148" />
             </state>
           </provider>
         </entry>
@@ -197,11 +199,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Model/MyModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4369">
-              <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
+            <state relative-caret-position="-255">
+              <caret line="75" column="7" lean-forward="true" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5778#5779#0" expanded="true" />
@@ -257,12 +259,12 @@
         <option value="$PROJECT_DIR$/src/View/StyleSheet.css" />
         <option value="$PROJECT_DIR$/src/View/IView.java" />
         <option value="$PROJECT_DIR$/src/Model/IModel.java" />
-        <option value="$PROJECT_DIR$/src/View/MyView.fxml" />
         <option value="$PROJECT_DIR$/src/ViewModel/MyViewModel.java" />
         <option value="$PROJECT_DIR$/src/View/MazeDisplayer.java" />
         <option value="$PROJECT_DIR$/src/View/Main.java" />
         <option value="$PROJECT_DIR$/src/View/alert.css" />
         <option value="$PROJECT_DIR$/src/Model/MyModel.java" />
+        <option value="$PROJECT_DIR$/src/View/MyView.fxml" />
         <option value="$PROJECT_DIR$/src/View/MyViewController.java" />
       </list>
     </option>
@@ -323,7 +325,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560712749885" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560714259393" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ATP - Project - PartB.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -542,11 +544,27 @@
       <option name="project" value="LOCAL" />
       <updated>1560702876425</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fixed bugs, updated the jar etc">
+      <created>1560712786228</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1560712786228</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="1993000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -563,13 +581,13 @@
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.055240795" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.23796034" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.42492917" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Application Servers" order="9" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.16855524" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.16855524" />
       <window_info anchor="bottom" id="Problems" order="11" />
       <window_info anchor="bottom" id="Changes" order="12" />
       <window_info anchor="bottom" id="Profiler" order="13" />
@@ -610,7 +628,8 @@
     <MESSAGE value="reimported jar from part b, including logger" />
     <MESSAGE value="added javadoc" />
     <MESSAGE value="created a jar" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a jar" />
+    <MESSAGE value="fixed bugs, updated the jar etc" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bugs, updated the jar etc" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -870,14 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/MyView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="133" column="57" selection-start-line="133" selection-start-column="57" selection-end-line="133" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/server.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -936,28 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/MyModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4369">
-          <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5778#5779#0" expanded="true" />
-            <element signature="e#5805#5806#0" expanded="true" />
-            <element signature="e#5863#5864#0" expanded="true" />
-            <element signature="e#5894#5895#0" expanded="true" />
-            <element signature="e#5955#5956#0" expanded="true" />
-            <element signature="e#5986#5987#0" expanded="true" />
-            <element signature="e#8513#8514#0" expanded="true" />
-            <element signature="e#8572#8573#0" expanded="true" />
-            <element signature="e#8605#8606#0" expanded="true" />
-            <element signature="e#8667#8668#0" expanded="true" />
-            <element signature="e#8714#8715#0" expanded="true" />
-            <element signature="e#8749#8750#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1041,8 +1030,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/MyViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+        <state relative-caret-position="1513">
+          <caret line="395" column="32" selection-start-line="395" selection-start-column="32" selection-end-line="395" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5960#5961#0" expanded="true" />
@@ -1053,8 +1042,38 @@
             <element signature="e#6174#6175#0" expanded="true" />
             <element signature="e#6229#6230#0" expanded="true" />
             <element signature="e#6267#6268#0" expanded="true" />
-            <element signature="e#7961#7962#0" expanded="true" />
-            <element signature="e#8005#8006#0" expanded="true" />
+            <element signature="e#8848#8849#0" expanded="true" />
+            <element signature="e#8892#8893#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/MyView.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2006">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/MyModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="75" column="7" lean-forward="true" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5778#5779#0" expanded="true" />
+            <element signature="e#5805#5806#0" expanded="true" />
+            <element signature="e#5863#5864#0" expanded="true" />
+            <element signature="e#5894#5895#0" expanded="true" />
+            <element signature="e#5955#5956#0" expanded="true" />
+            <element signature="e#5986#5987#0" expanded="true" />
+            <element signature="e#8513#8514#0" expanded="true" />
+            <element signature="e#8572#8573#0" expanded="true" />
+            <element signature="e#8605#8606#0" expanded="true" />
+            <element signature="e#8667#8668#0" expanded="true" />
+            <element signature="e#8714#8715#0" expanded="true" />
+            <element signature="e#8749#8750#0" expanded="true" />
           </folding>
         </state>
       </provider>

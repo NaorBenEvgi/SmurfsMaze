@@ -26,7 +26,7 @@
                         <Menu mnemonicParsing="false" text="File">
                             <items>
                                 <MenuItem fx:id="generateMazeButton" mnemonicParsing="false" onAction="#generateMaze" text="New" />
-                                <MenuItem fx:id="saveButton" mnemonicParsing="false" onAction="#saveMaze" text="Save" disable="true"/>
+                                <MenuItem fx:id="saveButton" disable="true" mnemonicParsing="false" onAction="#saveMaze" text="Save" />
                                 <MenuItem fx:id="loadButton" mnemonicParsing="false" onAction="#loadMaze" text="Load" />
                             </items>
                         </Menu>
@@ -68,13 +68,13 @@
                     <rowConstraints>
                         <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="38.333343505859375" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="61.666656494140625" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="61.666656494140625" minHeight="0.0" prefHeight="29.0" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="40.666656494140625" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="43.333343505859375" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="38.333343505859375" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40.666656494140625" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="43.333343505859375" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="38.333343505859375" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <VBox.margin>
                         <Insets left="20.0" top="20.0" />

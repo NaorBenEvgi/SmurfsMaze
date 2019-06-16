@@ -54,7 +54,7 @@ public class MyViewController implements IView, Observer {
     private boolean songPlayed = true;
     private boolean solutionDisplayed = false;
     private int numOfHints = 0;
-    private boolean started = false;
+    private boolean started = false, finished = false;
     private long startedTime, finishedTime;
 
     /**
@@ -89,6 +89,7 @@ public class MyViewController implements IView, Observer {
             displayMaze(viewModel.getBoard());
             generateMazeButton.setDisable(false);
             solveMazeButton.setDisable(false);
+
             mazeDisplayer.requestFocus();
         }
     }
@@ -107,6 +108,7 @@ public class MyViewController implements IView, Observer {
             return;
         }
         started = true;
+        finished = false;
         solutionDisplayed = false;
         solveMazeButton.setSelected(false);
         hintButton.setDisable(false);
@@ -143,6 +145,7 @@ public class MyViewController implements IView, Observer {
                 finishedTime = System.currentTimeMillis();
                 timeLabel.setText((finishedTime-startedTime)/1000 + "");
                 updateHighscore((int)((finishedTime-startedTime)/1000));
+                finished = true;
                 if(player != null)
                     player.pause();
                 playSong("resources/Music/WinningSong.mp3");
@@ -225,10 +228,12 @@ public class MyViewController implements IView, Observer {
      * @param press the type of key pressed
      */
     public void keyPress(KeyEvent press){
-        solutionDisplayed = false;
-        setNumOfHints(0);
-        viewModel.moveCharacter(press.getCode());
-        press.consume();
+        if(!finished) {
+            solutionDisplayed = false;
+            setNumOfHints(0);
+            viewModel.moveCharacter(press.getCode());
+            press.consume();
+        }
     }
 
     /**
@@ -366,6 +371,7 @@ public class MyViewController implements IView, Observer {
      */
     public void loadMaze(){
         setNumOfHints(0);
+        finished = false;
         songPlayed = true;
         solutionDisplayed = false;
         volumeButton.setSelected(false);
@@ -387,6 +393,7 @@ public class MyViewController implements IView, Observer {
             hintButton.setDisable(false);
             mazeDisplayer.requestFocus();
             startedTime = System.currentTimeMillis();
+            timeLabel.setText("");
         }
     }
 
