@@ -183,7 +183,7 @@ public class MazeDisplayer extends Canvas {
     }
 
     /**
-     * Getters of the images used in the application to draw the character, the walls, the solution and the goal
+     * Getters and setters of the images used in the application to draw the character, the walls, the solution and the goal
      * @return the images
      */
     public String getWallImage() {
@@ -194,14 +194,36 @@ public class MazeDisplayer extends Canvas {
         return characterImage.get();
     }
 
+    public void setWallImage(String wallImage){
+        this.wallImage.set(wallImage);
+    }
+
+    public void setCharacterImage(String characterImage){
+        this.characterImage.set(characterImage);
+    }
 
     public String getGoalImage() {
         return goalImage.get();
     }
 
+    public StringProperty goalImageProperty() {
+        return goalImage;
+    }
+
+    public void setGoalImage(String goalImage) {
+        this.goalImage.set(goalImage);
+    }
 
     public String getHintImage() {
         return hintImage.get();
+    }
+
+    public StringProperty hintImageProperty() {
+        return hintImage;
+    }
+
+    public void setHintImage(String hintImage) {
+        this.hintImage.set(hintImage);
     }
 
 }
