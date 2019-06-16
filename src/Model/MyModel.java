@@ -31,6 +31,9 @@ public class MyModel extends Observable implements IModel {
     private ExecutorService threadPool = Executors.newCachedThreadPool();
 
 
+    /**
+     * constructor
+     */
     public MyModel(){
         mazeGenerationServer = new Server(5400, 1000, new ServerStrategyGenerateMaze());
         mazeSolvingServer = new Server(5401, 1000, new ServerStrategySolveSearchProblem());
@@ -38,16 +41,27 @@ public class MyModel extends Observable implements IModel {
         maze = new Maze(0,0);
     }
 
+    /**
+     * Starts the maze generating and solving servers.
+     */
     public void startServers(){
         mazeGenerationServer.start();
         mazeSolvingServer.start();
     }
 
+    /**
+     * Stops the maze generating and solving servers.
+     */
     public void stopServers(){
         mazeGenerationServer.stop();
         mazeSolvingServer.stop();
     }
 
+    /**
+     * Sends given dimensions to the maze generating server.
+     * @param rows the height of the maze
+     * @param cols the width of the maze
+     */
     @Override
     public void generateMaze(int rows, int cols) {
         threadPool.execute(() -> {
@@ -59,6 +73,9 @@ public class MyModel extends Observable implements IModel {
         });
     }
 
+    /**
+     * Calls the maze solving server.
+     */
     @Override
     public void solveMaze() {
         threadPool.submit(() -> {
@@ -68,7 +85,11 @@ public class MyModel extends Observable implements IModel {
         });
     }
 
-
+    /**
+     * Calls the maze generating server from a client's request, and generates a maze.
+     * @param rows the height of the maze
+     * @param columns the width of the maze
+     */
     private void mazeGeneratorClient (int rows, int columns){
         try {
             Client client = new Client(InetAddress.getLocalHost(), 5400, new IClientStrategy() {
@@ -97,6 +118,9 @@ public class MyModel extends Observable implements IModel {
         }
     }
 
+    /**
+     * Calls the maze solving server from a client's request, and solves the maze.
+     */
     private void mazeSolverClient(){
         try {
             Client client = new Client(InetAddress.getLocalHost(), 5401, new IClientStrategy() {
@@ -129,11 +153,19 @@ public class MyModel extends Observable implements IModel {
         }
     }
 
+    /**
+     * Getter of the maze.
+     * @return the maze
+     */
     @Override
     public Maze getMaze() {
         return maze;
     }
 
+    /**
+     * Getters of the indexes of the character's position.
+     * @return indexes of the character's position
+     */
     @Override
     public int getCharacterPositionRow() {
         return rowIndex;
@@ -144,6 +176,10 @@ public class MyModel extends Observable implements IModel {
         return colIndex;
     }
 
+    /**
+     * Moves the character in a given direction.
+     * @param movement the pressed key that contains the direction of the movement
+     */
     @Override
     public void moveCharacter(KeyCode movement) {
         switch (movement){
@@ -227,6 +263,12 @@ public class MyModel extends Observable implements IModel {
         notifyObservers();
     }
 
+    /**
+     * Checks if the position that the character wants to move to is legal (contains a wall or exceeds the dimension of the maze).
+     * @param row the row index of the checked position
+     * @param col the column index of the checked position
+     * @return true if the character can move to the checked position in the maze, false otherwise
+     */
     private boolean checkMovement(int row, int col){
         if(row >= maze.getRows() || col >= maze.getCols() || row < 0 || col < 0)
             return false;
@@ -237,11 +279,18 @@ public class MyModel extends Observable implements IModel {
         return true;
     }
 
+    /**
+     * Exits the game - shuts down the thread pool and stops the servers.
+     */
     public void exitGame(){
         stopServers();
         threadPool.shutdown();
     }
 
+    /**
+     * Getters of the indexes of the position of the goal.
+     * @return indexes of the position of the goal
+     */
     public int getGoalRow(){
         return maze.getGoalPosition().getRowIndex();
     }
@@ -250,10 +299,18 @@ public class MyModel extends Observable implements IModel {
         return maze.getGoalPosition().getColumnIndex();
     }
 
+    /**
+     * Getter of the maze's solution.
+     * @return
+     */
     public ArrayList<Position> getSolution(){
         return solutionPath;
     }
 
+    /**
+     * Saves a maze in a file.
+     * @param compressedMaze the given file that contains the maze
+     */
     @Override
     public void saveMaze(File compressedMaze) {
         try{
@@ -268,6 +325,10 @@ public class MyModel extends Observable implements IModel {
         }
     }
 
+    /**
+     * Loads a saves maze from a file.
+     * @param compressedMaze the given file that contains the maze
+     */
     @Override
     public void loadMaze(File compressedMaze) {
         byte[] compressed;
@@ -297,6 +358,12 @@ public class MyModel extends Observable implements IModel {
     }
 
 
+    /**
+     * Converts a number represented in two byte numbers into one integer.
+     * @param mult the first byte
+     * @param add the second byte
+     * @return the value of the number as an integer
+     */
     private int convertByteToInteger(byte mult, byte add) {
         int num;
 
@@ -322,6 +389,4 @@ public class MyModel extends Observable implements IModel {
 
         return num;
     }
-
-
 }

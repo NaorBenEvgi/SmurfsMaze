@@ -10,7 +10,9 @@ import javafx.scene.image.Image;
 import java.io.FileInputStream;
 import java.util.ArrayList;
 
-
+/**
+ * This class is responsible of drawing the maze in the application.
+ */
 public class MazeDisplayer extends Canvas {
 
     private Maze board;
@@ -25,11 +27,18 @@ public class MazeDisplayer extends Canvas {
     protected int numOfHints;
     protected boolean solutionDisplayed;
 
+    /**
+     * constructor
+     */
     public MazeDisplayer(){
         widthProperty().addListener(ev -> drawMaze());
         heightProperty().addListener(ev -> drawMaze());
     }
 
+    /**
+     * Sets the maze object in this class to a given maze from the controller
+     * @param board the given maze
+     */
     public void setMaze(Maze board){
         this.board = board;
         maze = new int[board.getRows()][board.getCols()];
@@ -42,18 +51,32 @@ public class MazeDisplayer extends Canvas {
         setGoalPosition(board.getGoalPosition().getRowIndex(),board.getGoalPosition().getColumnIndex());
     }
 
+    /**
+     * Sets the position of the character to given indexes.
+     * @param row the row index
+     * @param col the column index
+     */
     public void setCharacterPosition(int row, int col){
         rowIndex = row;
         colIndex = col;
         drawMaze();
     }
 
+    /**
+     * Sets the goal position to given indexes.
+     * @param row the row index
+     * @param col the column index
+     */
     public void setGoalPosition(int row, int col){
         goalColIndex = col;
         goalRowIndex = row;
     }
 
-
+    /**
+     * Overrides of canvas class functions.
+     * These functions are responsible for setting the size of the maze in the application.
+     * @return the dimensions of the maze in the application
+     */
     @Override
     public boolean isResizable() {
         return true;
@@ -96,6 +119,9 @@ public class MazeDisplayer extends Canvas {
         drawMaze();
     }
 
+    /**
+     * Draws the maze in the application.
+     */
     public void drawMaze(){
         if(maze == null){
             return;
@@ -144,7 +170,10 @@ public class MazeDisplayer extends Canvas {
         }
     }
 
-
+    /**
+     * Getters of the character's position
+     * @return the indexes of the character's position
+     */
     public int getRowIndex() {
         return rowIndex;
     }
@@ -153,6 +182,10 @@ public class MazeDisplayer extends Canvas {
         return colIndex;
     }
 
+    /**
+     * Getters of the images used in the application to draw the character, the walls, the solution and the goal
+     * @return the images
+     */
     public String getWallImage() {
         return wallImage.get();
     }
@@ -161,36 +194,14 @@ public class MazeDisplayer extends Canvas {
         return characterImage.get();
     }
 
-    public void setWallImage(String wallImage){
-        this.wallImage.set(wallImage);
-    }
-
-    public void setCharacterImage(String characterImage){
-        this.characterImage.set(characterImage);
-    }
 
     public String getGoalImage() {
         return goalImage.get();
     }
 
-    public StringProperty goalImageProperty() {
-        return goalImage;
-    }
-
-    public void setGoalImage(String goalImage) {
-        this.goalImage.set(goalImage);
-    }
 
     public String getHintImage() {
         return hintImage.get();
-    }
-
-    public StringProperty hintImageProperty() {
-        return hintImage;
-    }
-
-    public void setHintImage(String hintImage) {
-        this.hintImage.set(hintImage);
     }
 
 }

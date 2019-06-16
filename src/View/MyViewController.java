@@ -57,11 +57,19 @@ public class MyViewController implements IView, Observer {
     private boolean started = false;
     private long startedTime, finishedTime;
 
+    /**
+     * Binds the properties of the controller and the ViewModel
+     * @param viewModel the matching ViewModel
+     */
     public void bindProperties(MyViewModel viewModel){
         rowsLabel.textProperty().bind(viewModel.characterRow);
         colsLabel.textProperty().bind(viewModel.characterColumn);
     }
 
+    /**
+     * ViewModel setter
+     * @param viewModel the given ViewModel
+     */
     public void setViewModel(MyViewModel viewModel) {
         this.viewModel = viewModel;
         bindProperties(viewModel);
@@ -85,6 +93,9 @@ public class MyViewController implements IView, Observer {
         }
     }
 
+    /**
+     * Reads the text boxes in the application and generates a maze accordingly
+     */
     public void generateMaze(){
         int rows, cols;
         try{
@@ -114,6 +125,11 @@ public class MyViewController implements IView, Observer {
         mazeDisplayer.requestFocus();
     }
 
+    /**
+     * Sets the maze in the maze displayer class and shows it on the screen in the application.
+     * In case the character has reached the goal, the music changes and the game ends.
+     * @param maze the given maze
+     */
     public void displayMaze(Maze maze){
         if(maze != null) {
             mazeDisplayer.setGoalPosition(viewModel.getGoalRow(), viewModel.getGoalColumn());
@@ -137,7 +153,10 @@ public class MyViewController implements IView, Observer {
         }
     }
 
-
+    /**
+     * Character position getters
+     * @return the indexes of the character's position
+     */
     public String getCharacterRow() {
         return characterRow.get();
     }
@@ -154,7 +173,10 @@ public class MyViewController implements IView, Observer {
         return characterColumn;
     }
 
-
+    /**
+     * Sets the number of hints to the given value
+     * @param numOfHints the given amount of hints
+     */
     public void setNumOfHints(int numOfHints) {
         this.numOfHints = numOfHints;
         hintsLabel.setText(numOfHints + "");
@@ -162,7 +184,9 @@ public class MyViewController implements IView, Observer {
         hintButton.setDisable(false);
     }
 
-
+    /**
+     * Solves the maze and displays the solution in the application.
+     */
     public void solveMaze(){
         setNumOfHints(0);
         if(!solutionDisplayed){
@@ -182,7 +206,9 @@ public class MyViewController implements IView, Observer {
         mazeDisplayer.requestFocus();
     }
 
-
+    /**
+     * Opens a window with description about the game and its rules.
+     */
     public void help(){
         helpButton.setDisable(true);
         playSong("resources/Music/smurfSongAlert.mp3");
@@ -192,6 +218,10 @@ public class MyViewController implements IView, Observer {
                 "Use the arrow keys or the numpad to move the smurfs. Diagonal movement is possible, but you cannot move through the walls in any case.");
     }
 
+    /**
+     * Activates when a key is pressed, and moves the character in the maze if the pressed key is one of the arrows.
+     * @param press the type of key pressed
+     */
     public void keyPress(KeyEvent press){
         solutionDisplayed = false;
         setNumOfHints(0);
@@ -199,10 +229,17 @@ public class MyViewController implements IView, Observer {
         press.consume();
     }
 
+    /**
+     * Sets the focus on the maze when the user clicks the mouse.
+     * @param click the mouse click
+     */
     public void mouseClick(MouseEvent click){
         mazeDisplayer.requestFocus();
     }
 
+    /**
+     * Opens a window with description about the algorithms that generate and solve the maze.
+     */
     public void algorithmsInfo(){
         displayAlert("About The Algorithms",
                 "This game is built on two kinds of algorithms:\n" +
@@ -210,11 +247,19 @@ public class MyViewController implements IView, Observer {
                         + "The maze generating algorithm implements DFS algorithm, and the maze solving algorithm implements Best First Search algorithm.");
     }
 
+    /**
+     * Opens a window with description about the amazing programmers, Roy Judes and Naor Ben Evgi.
+     */
     public void programmersInfo(){
         displayAlert("About The Programmers",
                 "The programmers, Naor Ben Evgi and Roy Judes,\nare second year students in ISE department in Ben Gurion University.");
     }
 
+    /**
+     * Opens a window with given title and text, in order to send a message to the user.
+     * @param title the title of the message
+     * @param alert the content of the message
+     */
     private void displayAlert(String title, String alert){
         Alert displayedAlert = new Alert(Alert.AlertType.INFORMATION);
         displayedAlert.setTitle(title);
@@ -239,6 +284,10 @@ public class MyViewController implements IView, Observer {
         displayedAlert.show();
     }
 
+    /**
+     * Plays a song in the background.
+     * @param songPath the path of the song's location in the project
+     */
     public void playSong(String songPath){
         if(player != null){
             player.pause();
@@ -252,6 +301,9 @@ public class MyViewController implements IView, Observer {
         player.play();
     }
 
+    /**
+     * Pauses the music when the mute button is pressed.
+     */
     public void pauseMusic(){
         if(songPlayed){
             player.pause();
@@ -264,6 +316,9 @@ public class MyViewController implements IView, Observer {
         mazeDisplayer.requestFocus();
     }
 
+    /**
+     * Draws a hint in the maze when the matching button in the application is pressed.
+     */
     public void showHint(){
         if(numOfHints == viewModel.getSolution().size() && numOfHints != 0){
             displayAlert("Maximum Hints Displayed", "You can't get anymore hints since the whole way to the village is displayed...");
@@ -275,6 +330,10 @@ public class MyViewController implements IView, Observer {
         viewModel.solveMaze();
     }
 
+    /**
+     * Zooms in/out according to the user's scroll.
+     * @param scroll the scroll event
+     */
     public void zoom(ScrollEvent scroll){
         if(scroll.isControlDown()){
             mazeDisplayer.setHeight(mazeDisplayer.getHeight() + scroll.getDeltaY());
@@ -283,7 +342,9 @@ public class MyViewController implements IView, Observer {
         }
     }
 
-
+    /**
+     * Saves the game as a text file.
+     */
     public void saveMaze(){
         FileChooser chooser = new FileChooser();
         chooser.setTitle("Save maze");
@@ -298,7 +359,9 @@ public class MyViewController implements IView, Observer {
         }
     }
 
-
+    /**
+     * Loads a game from the folder of the saved games.
+     */
     public void loadMaze(){
         songPlayed = true;
         solutionDisplayed = false;
@@ -323,6 +386,9 @@ public class MyViewController implements IView, Observer {
         }
     }
 
+    /**
+     * Exits the game and closes the application when the exit button is pressed.
+     */
     public void exitGame(){
         viewModel.exitGame();
         Platform.exit();
@@ -331,6 +397,9 @@ public class MyViewController implements IView, Observer {
     }
 
 
+    /**
+     * Opens a window and describes the properties written in the configurations file.
+     */
     public void displayProperties(){
         String title = "Game Properties";
         String content,line;
@@ -361,6 +430,10 @@ public class MyViewController implements IView, Observer {
         }
     }
 
+    /**
+     * Redraws the maze in the application in a matching size to the changed size of the main window.
+     * @param scene the window which the user resized
+     */
     public void setResizeEvent(Scene scene) {
         long width = 0;
         long height = 0;
@@ -382,6 +455,9 @@ public class MyViewController implements IView, Observer {
         });
     }
 
+    /**
+     * Shows the current record of the game when the highscore button is pressed.
+     */
     public void showHighscore(){
         try{
             BufferedReader br = new BufferedReader(new FileReader("highscore"));
@@ -413,7 +489,10 @@ public class MyViewController implements IView, Observer {
         }
     }
 
-
+    /**
+     * Updates the highscore in the highscore file in case it broke the current record.
+     * @param time the time (in seconds) that took the user to solve the maze
+     */
     private void updateHighscore(int time){
         try {
             BufferedReader br = new BufferedReader(new FileReader("highscore"));
@@ -453,6 +532,11 @@ public class MyViewController implements IView, Observer {
         }
     }
 
+    /**
+     * Calculates the grade of a finished game.
+     * @param time the time (in seconds) that took the user to solve the maze
+     * @return the calculated grade
+     */
     private int calculateGrade(int time){
         Maze temp = viewModel.getBoard();
         int rows = temp.getRows(), cols = temp.getCols();
@@ -460,16 +544,4 @@ public class MyViewController implements IView, Observer {
         return (rows*cols)*10/time;
     }
 
-
-    /*public void setRows(KeyEvent event){
-        if (event.getCode() == KeyCode.ENTER){
-            if(Integer.valueOf(rowsTextField.getText()) < 10){
-                displayAlert();
-            }
-        }
-    }
-
-    public void setColumns(KeyEvent event){
-
-    }*/
 }
