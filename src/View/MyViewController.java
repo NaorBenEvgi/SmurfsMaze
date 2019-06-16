@@ -195,7 +195,11 @@ public class MyViewController implements IView, Observer {
     public void keyPress(KeyEvent press){
         solutionDisplayed = false;
         setNumOfHints(0);
-        hintButton.setDisable(false);
+        if(started) {
+            hintButton.setDisable(false);
+            if(solveMazeButton.isSelected())
+                solutionDisplayed = true;
+        }
         viewModel.moveCharacter(press.getCode());
         press.consume();
     }
