@@ -40,8 +40,8 @@ public class Main extends Application {
 
         PauseTransition endMovie = new PauseTransition(Duration.seconds(17));
         endMovie.setOnFinished(e -> {stage.close();
-            primaryStage.setMinWidth(1500);
-            primaryStage.setMinHeight(900);
+            primaryStage.setMinWidth(1000);
+            primaryStage.setMinHeight(700);
             primaryStage.setFullScreen(true);
             MyModel model = new MyModel();
             model.startServers();
@@ -58,7 +58,7 @@ public class Main extends Application {
             scene.getStylesheets().add(getClass().getResource("./StyleSheet.css").toExternalForm());
             primaryStage.setScene(scene);
             MyViewController view = fxmlLoader.getController();
-            //view.setResizeEvent(scene);
+            view.setResizeEvent(scene);
             view.setViewModel(viewModel);
             viewModel.addObserver(view);
             primaryStage.setOnCloseRequest(event -> view.exitGame());

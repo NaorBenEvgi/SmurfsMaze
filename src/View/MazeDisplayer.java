@@ -54,6 +54,48 @@ public class MazeDisplayer extends Canvas {
     }
 
 
+    @Override
+    public boolean isResizable() {
+        return true;
+    }
+
+    @Override
+    public double prefWidth(double height) {
+        return getWidth();
+    }
+
+    @Override
+    public double prefHeight(double width) {
+        return getHeight();
+    }
+
+    @Override
+    public double minWidth(double height) {
+        return 400;
+    }
+
+    @Override
+    public double minHeight(double width) {
+        return 400;
+    }
+
+    @Override
+    public double maxWidth(double height) {
+        return 1000;
+    }
+
+    @Override
+    public double maxHeight(double width) {
+        return 1000;
+    }
+
+    @Override
+    public void resize(double width, double height) {
+        super.setHeight(height);
+        super.setWidth(width);
+        drawMaze();
+    }
+
     public void drawMaze(){
         if(maze == null){
             return;
