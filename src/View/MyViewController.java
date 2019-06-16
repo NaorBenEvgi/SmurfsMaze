@@ -195,7 +195,6 @@ public class MyViewController implements IView, Observer {
     public void keyPress(KeyEvent press){
         solutionDisplayed = false;
         setNumOfHints(0);
-        //hintButton.setDisable(false);
         viewModel.moveCharacter(press.getCode());
         press.consume();
     }

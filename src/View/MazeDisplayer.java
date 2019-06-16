@@ -192,4 +192,5 @@ public class MazeDisplayer extends Canvas {
     public void setHintImage(String hintImage) {
         this.hintImage.set(hintImage);
     }
+
 }

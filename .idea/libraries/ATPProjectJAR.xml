@@ -1,11 +1,9 @@
 <component name="libraryTable">
-  <library name="ATP - Project - PartB">
+  <library name="ATPProjectJAR">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../ATP - Project - PartB.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../ATP - Project - PartB.jar!/src" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>
