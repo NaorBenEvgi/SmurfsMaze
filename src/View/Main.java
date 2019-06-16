@@ -52,10 +52,10 @@ public class Main extends Application {
             Scene scene = null;
             try {
                 scene = new Scene(fxmlLoader.load(getClass().getResource("MyView.fxml").openStream()),1500,900);
-            } catch (IOException e1) {
+            } catch (Exception e1) {
                 e1.printStackTrace();
             }
-            scene.getStylesheets().add(getClass().getResource("./StyleSheet.css").toExternalForm());
+            scene.getStylesheets().add(getClass().getResource("StyleSheet.css").toExternalForm());
             primaryStage.setScene(scene);
             MyViewController view = fxmlLoader.getController();
             view.setResizeEvent(scene);

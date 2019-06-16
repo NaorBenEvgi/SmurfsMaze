@@ -64,7 +64,7 @@ public class MyModel extends Observable implements IModel {
      */
     @Override
     public void generateMaze(int rows, int cols) {
-        threadPool.execute(() -> {
+        threadPool.submit(() -> {
             mazeGeneratorClient(rows,cols);
             rowIndex = maze.getStartPosition().getRowIndex();
             colIndex = maze.getStartPosition().getColumnIndex();

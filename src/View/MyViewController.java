@@ -149,6 +149,8 @@ public class MyViewController implements IView, Observer {
                 saveButton.setDisable(true);
                 displayAlert("You Won!", "Way to go! You escaped from the maze and left Gargamel stuck behind.\n" +
                         "The mission took you " + (finishedTime-startedTime)/1000 + " seconds.");
+                solveMazeButton.setDisable(true);
+                hintButton.setDisable(true);
             }
         }
     }
@@ -363,6 +365,7 @@ public class MyViewController implements IView, Observer {
      * Loads a game from the folder of the saved games.
      */
     public void loadMaze(){
+        setNumOfHints(0);
         songPlayed = true;
         solutionDisplayed = false;
         volumeButton.setSelected(false);
@@ -383,6 +386,7 @@ public class MyViewController implements IView, Observer {
             solveMazeButton.setSelected(false);
             hintButton.setDisable(false);
             mazeDisplayer.requestFocus();
+            startedTime = System.currentTimeMillis();
         }
     }
 
@@ -540,7 +544,8 @@ public class MyViewController implements IView, Observer {
     private int calculateGrade(int time){
         Maze temp = viewModel.getBoard();
         int rows = temp.getRows(), cols = temp.getCols();
-
+        if(time == 0)
+            time++;
         return (rows*cols)*10/time;
     }
 
